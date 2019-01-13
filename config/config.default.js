@@ -9,8 +9,14 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
-  exports.multipart = {
+  config.multipart = {
     fileExtensions: [''],
+  };
+
+  config.security = {
+    csrf: {
+      enable: false
+    }
   };
   
 
